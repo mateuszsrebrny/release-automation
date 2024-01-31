@@ -2,10 +2,10 @@ name: version update
 run-name: Update versions
 on: workflow_dispatch 
 jobs:
-  check-bats-version:
+  update-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
       - run: echo "version update coming right up" 
-
+      - run: ls -l
